@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Abigail Grace</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,11 +17,10 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <!-- Google Font -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -35,21 +35,22 @@
     <div class="content-wrapper">
       <figure>
         <a href="#">
-          <img class="logo" src="img/abigailgracelogo.png" alt="AG Logo" />
+          <img class="logo" src="img/agc-logo.png" alt="AGC Logo" />
         </a>
       </figure>
+
+  <!-- figure out how to do DROPDOWN MENU - JS? -->
       <nav>
         <ul>
-          <li><a href="#my-work">my work</a></li>
-          <li><a href="#lets-connect">let's connect</a></li>
+          <li><a href="index.html">home</a></li>
+          <li><a href="services/index.html">services</a></li>
+          <li><a href="portfolio/index.html">portfolio</a></li>
+          <li><a href="about/index.html">about me</a></li>
+          <li><a href="contact/index.html">let's connect</a></li>
         </ul>
       </nav>
 
-      <div class="hero-area">
-        <img src="img/hello-there.png" alt="Hello there" />
-        <h1>My name is Abigail.</h1>
-        <h2>Frontend Developer, Web Designer, & nap enthusiast</h2>
-      </div>
+
 
 
   </div>
@@ -58,112 +59,221 @@
 
 <main>
 
+<!-- Hero Area -->
+
+  <section class="hero-area">
+    <div class="hero-area-content-wrapper">
+
+      <h2>hello there,</h2>
+      <h1>My name is Abigail.</h1>
+      <h3>Frontend Developer, Web Designer, & nap enthusiast</h3>
+
+    </div>
+  </section>
+
 <!--Mission Statement Section-->
+
   <section class="mission-statement">
-    <div class="content-wrapper">
-      <!--<div class="blue-wave">
-        <img src="img/blue-wave.png" alt="Blue Wave">
-      </div>-->
+    <img id="picture-mobile" src="img/abbi-avatar-circle.png" alt="Abbi circle avatar">
+
+    <div class="mission-content-wrapper" id="mission-wrapper">
+
+      <div class="half-width">
+        <img id="picture-tablet" src="img/tablet-abigail-mission.png" alt="Abbi tablet picture">
+        <img id="picture-desktop" src="img/abbi-desktop.png" alt="Abbi desktop picture">
+      </div>
+
+      <div class="half-width" id="mission-text">
+        <h3>Welcome to my cozy corner of the Internet!</h3>
         <p>
           My greatest joy is to support small businesses' dreams by creating and
           designing incredible websites that will champion your businesses' unique
           character, all the while making the process as fun and enjoyable as I
           know it can be!
         </p>
+        <a href="">Let's get started!</a>
+      </div>
 
     </div>
   </section>
 
 <!-- C2A Section -->
-  <section class="call-to-action">
-    <div class="content-wrapper">
-      <img src="img/excited.png" alt="Excited?" />
-      <button type="button" onclick="location.href='#lets-connect'">let's work together!</button>
+  <section class="first-c2a">
+    <div class="content-wrapper" id="firstc2a-wrapper">
+      <h1>The most important part of your business, your website, & your brand is <em>you</em></h1>
+      <p>Thoughtful, impactful imagery + strong user-intuitive build is key to opening the world to your
+        business' success.<br>
+        Let's work together to make the dream happen.
+      </p>
+    <!-- fix location of button direction -->
+      <button type="button" onclick="location.href='#lets-connect'">Learn More</button>
     </div>
   </section>
 
-<!-- Portfolio/Work Section -->
-  <section class="work">
-    <div class="content-wrapper">
+<!-- What I Do Section -->
+  <section class="what-i-do">
+    <div class="what-i-do-content-wrapper">
 
-        <h2 id="my-work">check out my recent work</h2>
-
-        <div class="work-wrapper">
-          <div class="div-one">
-              <img src="img/unplugged-screenshot.png" alt="Unplugged Site" />
-              <h3>Unplugged</h3>
-              <p>
-               This site showcases practices like Responsive CSS
-                that makes your site enjoyable to experience on all screen sizes, from
-                mobile to desktop.
+      <h1>What I Love & Do</h1>
+        <div class="what-i-do-wrapper">
+          <div class="div-one third-width">
+            <img src="img/pencil-case.png" alt="design logo">
+            <h3>Design</h3>
+            <p class="description"> Simple, yet impactful & effective design is key in my projects. This partnered with thoughtful
+              interaction is important for my clients.
+            </p>
+            <p id="list-div1" class="list-title"><strong>Tools:</strong></p>
+              <p class="list">
+                Figma<br>
+                Adobe<br>
+                Photoshop
               </p>
           </div>
-          <div class="div-two">
-            <a href="https://mimibird113.github.io/jubilee-austen/" target="_blank">
-                <img src="img/jubilee-screenshot.png" alt="Jubilee Austen" />
-            </a>
-              <h3>Jubilee Austen</h3>
-              <p>
-                A practice portfolio project with a simple, one-page static interface using
-                HTML & CSS.
+
+          <div class="div-two third-width">
+            <img id="center-img" src="img/fed-icon.png" alt="Front-End Dev logo">
+            <h3 id="center-heading">Front-End Development</h3>
+            <p class="description" id="center-description">I code from scratch and find fulfillment in getting
+              that code just right.
+            </p>
+            <p><strong>Languages:</strong> HTML, CSS, Javascript React</p>
+            <p class="list-title"><strong>Tools:</strong></p>
+              <p class="list">
+                Figma<br>
+                Adobe<br>
+                Photoshop
               </p>
           </div>
-          <div class="div-three">
-              <a href="https://www.melanieyodkins.com/" target="_blank">
-                <img src="img/myactingcoach-screenshot.png" alt="MAC site" />
-              </a>
-              <h3>Melanie Yodkins</h3>
-              <p>
-                A multi-page website I designed and then created using Squarespace for an online
-                acting coach that perfectly showcases her personality while also guiding her
-                clients to her programs.
-              </p>
+
+          <div class="div-three third-width">
+            <img src="img/pantone.png" alt="design logo">
+            <h3>Branding</h3>
+            <p class="description">It brings me joy to see a cohesive idea for a business, making me extra passionate about getting it
+              right for you.
+            </p>
+            <p id="list-div3" class="list-title"><strong>Tools:</strong></p>
+              <p class="list">
+                Figma<br>
+                Adobe<br>
+                Photoshop
+            </p>
           </div>
         </div>
+      </div>
+  </section>
+<!-- Options Section -->
+  <section class="work">
+    <div class="work-content-wrapper">
+
+          <div class="portfolio-div">
+              <img src="img/portfolioimg.png" alt="Portfolio Picture" />
+              <h3>my portfolio</h3>
+              <p>
+               check out my previous projects to see what I do &amp get a feel
+               for the style that characterizes my work.
+              </p>
+              <button type="button" onclick="">show me</button>
+          </div>
+          <div class="services-div">
+
+              <img src="img/servicesimg.png" alt="Services Picture" />
+
+              <h3>my services</h3>
+              <p>
+                here you'll find services & packages for your development, web design,
+                & branding needs.
+              </p>
+              <button type="button" onclick="">let's go</button>
+          </div>
+          <div class="contact-div">
+
+              <img src="img/contactimg.png" alt="Contact Picture" />
+
+              <h3>contact me</h3>
+              <p>
+                let's grab a cup of coffee and chat virtually or in person about your business &amp future website.
+              </p>
+              <button class="contact-me-button" type="button" onclick="">let's chat</button>
+          </div>
 
       </div>
   </section>
 
-<!-- About Section -->
+<!-- About Me Section -->
   <section class="about">
-    <div class="content-wrapper">
+    <div class="about-content-wrapper">
 
-      <div class="polaroids">
-        <img src="img/polaroids-site.png" alt="Polaroids"/>
+
+      <div class="about-picture">
+        <img id="aboutpic-mobile" src="img/about-abbi-mobile.png" alt="About Abbi mobile picture">
+        <img id="aboutpic-notmobile" src="img/about-me-portrait.jpg" alt="About Abbi tablet desktop picture">
       </div>
-      <div class="description">
-        <img src="img/my-name-hobbit.png" alt="My Name is"/>
-        <p>
-          In all ways except physical, I am a Hobbit. I am a homebody with a small streak
-          of adventure, but find I am most at peace with 4 things: a steaming cup of black
-          coffee, good food, good company, and good-tilled earth.
-        </p>
+
+      <div class="about-writing-section">
+        <div class="about-description">
+          <h2>WELCOME</h2>
+          <p>
+            I'm Abigail...and in all ways except physical, I am a Hobbit. I am a homebody with a small streak
+            of adventure, but find I am most at peace with 4 things: a steaming cup of black
+            coffee, good food, good company, &amp good-tilled earth.
+          </p>
+        </div>
+
+        <div class="learn-about-button">
+          <a href="">Learn more about me</a>
+        </div>
       </div>
 
     </div>
   </section>
+
+<!-- Final C2A Section -->
+  <section class="final-c2a">
+    <div class="final-c2a-wrapper">
+      <div class="img-finalc2a">
+        <img src="img/desk-cozy.png" alt="Cozy Desk">
+      </div>
+      <div class="text-finalc2a">
+        <h1>Ready to create the website that your incredible business <em>deserves?</em></h1>
+        <p>Take the first steps to working together by telling me a little bit about
+          you and your business. I can't wait to get started!</p>
+        <button type="button" onclick="">let's work together!</button>
+      </div>
 
 </main>
 
 <footer>
-  <div class="content-wrapper">
+  <div class="footer-content-wrapper">
 
-    <h2 id="lets-connect">let's connect</h2>
-    <p>hello@abigailgracecode.com</p>
-
-      <div class="social">
-        <h3>social</h3>
-        <div class="social-icons">
-          <p>
-            <a href="https://github.com/Abigail-Carey" target="_blank"><img src="img/github.png" alt="github icon" /></a>
-          </p>
-          <p>
-            <a href="https://www.instagram.com/agcarey97/" target="_blank"><img src="img/instagram.png" alt="instagram icon" /></a>
-          </p>
+      <div class="footer-half-width">
+        <div class="navigate">
+          <h3>navigate</h3>
+          <div class="navigation-list">
+            <ul>
+              <li><a href="">home</a></li>
+              <li><a href="">portfolio</a></li>
+              <li><a href="">services</a></li>
+              <li><a href="">about</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="coffee-icon">
-        <!--<a href="https://www.flaticon.com/free-icons/coffee" title="coffee icons">Coffee icons created by Freepik - Flaticon</a> -->
+
+      <div class="footer-half-width">
+        <div class="contact">
+          <h3>let's connect</h3>
+          <div class="contact-form-link">
+            <a href="">contact me</a>
+          </div>
+          <div class="social-icons">
+            <p>
+              <a href="https://github.com/Abigail-Carey" target="_blank"><img src="img/gh-icon.png" alt="github icon" /></a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/agcarey97/" target="_blank"><img src="img/insta-icon.png" alt="instagram icon" /></a>
+            </p>
+          </div>
+        </div>
       </div>
 
   </div>
